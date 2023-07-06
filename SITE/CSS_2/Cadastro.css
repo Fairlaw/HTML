@@ -1,0 +1,14 @@
+form{
+    display:flex;
+    align-items: center;
+
+}
+fieldset{
+    background-color: antiquewhite;
+}
+
+input{
+    display:flex;
+    align-items: center;
+    min-width: 400px;
+}

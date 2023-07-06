@@ -1,0 +1,32 @@
+p
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+h1
+{
+    font-family: fantasy;
+    font-size: 20px;
+    color: #FAAB76;
+}
+
+h2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: chartreuse;
+}
+
+.h2especial
+{
+    font-family: cursive;
+    font-size: 35px;
+    background-color: cornflowerblue;
+    color: aliceblue;
+}
+
+.img300px
+{
+    width: 300px;
+}
