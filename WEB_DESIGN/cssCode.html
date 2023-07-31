@@ -1,0 +1,366 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>PCSTORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">			
+			<div id="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div id="Title">WEB DESIGN</div>
+			<nav>  
+				<ul>
+					<li><a href="index.html">Home</a>
+					<li><a href="htmlCode.html">HTML</a>
+					<li><a href="cssCode.html">CSS</a>
+					<li><a href="JSCode.html">JavaScript</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="header-baixo"> Este website é apenas uma avaliação sobre UC de Desenvolvimento Web</div>
+	<section id="conteudo">
+		<main role="main">
+			<button class="accordion">Abaixo está o código fonte CSS</button>
+			<div class="caixaTexto">
+                <pre>
+                    <code>
+                        /* Estilos globais para elementos HTML (RESET) */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,
+strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,
+details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* Estilos gerais do body */
+body {
+    line-height:1;
+    font-family: arial;
+}
+
+/* Estilos para t&iacute;tulos */
+h1 { font-size: 25px; }
+h2 { font-size: 21px; }
+h3 { font-size: 18px; }
+h4 { font-size: 16px; }
+
+/* Estilos para elementos de bloco */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Estilos para lista n&atilde;o ordenada do nav */
+nav ul {
+    list-style: none;
+}
+
+/* Estilos para elementos de cita&ccedil;&atilde;o */
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: none;
+}
+
+/* Estilos para link */
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Estilos para elemento inserido (ins) */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* Estilos para elemento marcado (mark) */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Estilos para elemento deletado (del) */
+del {
+    text-decoration: line-through;
+}
+
+/* Estilos para abrevia&ccedil;&atilde;o com t&iacute;tulo (abbr) e defini&ccedil;&atilde;o (dfn) com t&iacute;tulo */
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+/* Estilos para tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Estilos para linha horizontal (hr) */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/* Estilos para input e select */
+input, select {
+    vertical-align: middle;
+}
+
+/* Estilos do body */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: radial-gradient(60% 60% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.92)70.83%), url(img/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Estilos do header */
+header {
+    background: #AEC6CF;
+    background-image: url(img/header.jpg);
+    max-width: 80%;
+    height: auto;
+    min-height: 20%;
+    margin: auto;   
+}
+
+/* Estilos do elemento #header-baixo */
+#header-baixo {
+    background-color: #0066ff18;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    max-width: 79%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+/* Estilos do container */
+.container {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Estilos do t&iacute;tulo */
+#title {
+    font-size: 40px;
+    margin-right: 200px;
+    margin-left: 15px;
+    color: #ffffff;
+    text-shadow: 3px 3px 3px #000;
+}
+
+/* Estilos da logo */
+#logo img {
+    width: 120px;
+    margin-left: 50px;
+    filter: drop-shadow(0px 0px 8px rgb(19, 19, 255));
+}
+
+/* Estilos do nav do container */
+.container nav {
+    display: inline-block;
+}
+
+/* Estilos dos links do nav */
+nav ul li a {
+    background: #EEE;
+    padding: 2px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:
+
+ #444;
+    border-radius: 10px;
+}
+
+/* Estilos dos links do nav ao passar o mouse */
+nav ul li a:hover {
+    background: #0059ff8a;
+    color: white;
+    transition: ease-in 0.5s;
+}
+
+/* Estilos dos itens do nav */
+nav ul li {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* Estilos da lista n&atilde;o ordenada do nav */
+nav ul {
+    list-style: none;
+}
+
+/* Estilos do conte&uacute;do */
+#conteudo {
+    display: flex;
+    margin: auto;
+    max-width: 80%;
+    gap: 50px;
+    border: none;
+}
+
+/* Estilos do elemento main */
+main {
+    width: 100%;
+}
+
+/* Estilos da imagem do quadrado */
+.quadrado img {
+    float: right;
+    margin: 5px;
+    max-width: 500px;
+}
+
+/* Estilos da caixa de texto */
+.caixaTexto {
+    max-height: 0;
+    background-color: #0000009f;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+    transition: max-height 0.5s ease-out ;
+    overflow: hidden;
+}
+
+/* Estilos do t&iacute;tulo da caixa de texto */
+.caixaTexto h2 {
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left: 5px;
+    color: white;
+    font-weight:bold;
+    margin-bottom: 12px;
+}
+
+/* Estilos do par&aacute;grafo da caixa de texto */
+.caixaTexto p {
+    font-family: serif;
+    font-size: auto;
+    color: white;
+    letter-spacing: 1;
+    line-height: 1.1;
+    text-align: justify;
+    margin: 20px 20px 20px 5px;
+}
+
+/* Estilos do subt&iacute;tulo da caixa de texto */
+.caixaTexto h3 {
+    color: rgb(0, 185, 231);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos do bot&atilde;o &quot;accordion&quot; */
+.accordion {
+    text-shadow: 0 0 5px black;
+    font-size: 20px;
+    background-color: #9088ff5d;
+    color: rgb(238, 238, 238)rgb(14, 66, 211);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Estilos do bot&atilde;o &quot;accordion&quot; ao passar o mouse */
+.accordion:hover {
+    background-color: rgba(0, 204, 255, 0.308);
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px #ffffff;
+    border-bottom: 1px solid #fffbfb;
+}
+
+/* Estilos do rodap&eacute; */
+footer {
+    background: #0066ff18;;
+    max-width: 80%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    margin: auto;
+    clear: both;
+    text-align: left;
+    color: white;
+}
+
+/* Estilos do par&aacute;grafo do rodap&eacute; */
+footer p {
+    padding: 20px;
+}
+
+/* Estilos do elemento &quot;address&quot; */
+address {
+    padding: 10px 20px 30px 10px;
+}
+```
+
+Espero que isso ajude a entender melhor o c&oacute;digo e o significado de cada estilo aplicado em cada elemento. 
+Com os coment&aacute;rios, fica mais f&aacute;cil de acompanhar o que cada parte do c&oacute;digo est&aacute; fazendo.
+                    </code>  
+                </pre>
+            </div>
+		</main>
+	</section>
+	</div>
+	<footer>
+		<p> Web Side desenvolvido por Lucas Alcantara | 
+		
+			Contact: <a href="lucas29466@gmail.com">Mail me</a>
+		
+		</p>
+	</footer>
+
+	<!--java script -->
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		  });
+		}
+		</script>
+</body>
+</html> 

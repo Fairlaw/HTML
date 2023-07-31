@@ -1,0 +1,103 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>PCSTORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="container">			
+			<div id="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div id="Title">WEB DESIGN</div>
+			<nav>  
+				<ul>
+					<li><a href="index.html">Home</a>
+					<li><a href="htmlCode.html">HTML</a>
+					<li><a href="cssCode.html">CSS</a>
+					<li><a href="JSCode.html">JavaScript</a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div id="header-baixo"> Este website é apenas uma avaliação sobre UC de Desenvolvimento Web</div>
+	<section id="conteudo">
+		<main role="main">
+			<button class="accordion">Abaixo está o código fonte Java Script</button>
+			<div class="caixaTexto">
+                <pre>
+                    <code>
+                        
+                        O código abaixo é um script em JavaScript que cria um acordeão (accordion) interativo para uma 
+                        lista de elementos com a classe "accordion". Quando um elemento "accordion" é clicado, ele expande 
+                        ou recolhe o painel seguinte, permitindo que o conteúdo seja exibido ou ocultado.&lt;/br&gt;
+
+                        O script começa obtendo todos os elementos com a classe "accordion" usando o método getElementsByClassName().
+                         Em seguida, ele itera por cada um desses elementos usando um loop for. Para cada elemento, é adicionado um
+                          ouvinte de eventos (addEventListener) que reage quando o elemento é clicado.
+                        
+                        Dentro do manipulador de eventos, o elemento atual que foi clicado é referenciado como "this". É então alternada 
+                        a classe "active" no elemento atual, o que pode ser útil para aplicar estilos ao elemento ativo.
+                        
+                        Em seguida, é obtido o próximo elemento irmão (nextElementSibling) do elemento atual, que deve ser o painel 
+                        associado ao acordeão. O painel é armazenado na variável "panel".
+                        
+                        Depois, verifica-se se o estilo "maxHeight" do painel está definido. Se estiver definido (ou seja, o painel já
+                         está expandido), é removido (tornando-o recolhido). Caso contrário, é definido o "maxHeight" do painel como a
+                          altura total do conteúdo (scrollHeight), fazendo com que o painel seja expandido para mostrar todo o conteúdo.
+                        
+                        Em resumo, este script cria um acordeão funcional que expande e recolhe o conteúdo conforme o usuário clica nos
+                         títulos dos painéis.
+                        
+
+                        &lt;script&gt;
+                        var acc = document.getElementsByClassName(&quot;accordion&quot;);
+                        var i;
+                        
+                        for (i = 0; i &lt; acc.length; i++) {
+                        acc[i].addEventListener(&quot;click&quot;, function() {
+                            this.classList.toggle(&quot;active&quot;);
+                            var panel = this.nextElementSibling;
+                            if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                            } else {
+                            panel.style.maxHeight = panel.scrollHeight + &quot;px&quot;;
+                            }
+                        });
+                        }
+                        &lt;/script&gt;
+                    </code>  
+                </pre>
+            </div>
+		</main>
+	</section>
+	</div>
+	<footer>
+		<p> Web Side desenvolvido por Lucas Alcantara | 
+		
+			Contact: <a href="lucas29466@gmail.com">Mail me</a>
+		
+		</p>
+	</footer>
+
+	<!--java script -->
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		
+		for (i = 0; i < acc.length; i++) {
+		  acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+			  panel.style.maxHeight = null;
+			} else {
+			  panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		  });
+		}
+		</script>
+</body>
+</html> 
